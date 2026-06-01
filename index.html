@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Os Crias - Natal/RN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="overlay">
+    <h1>OS CRIAS</h1>
+    <p>Time Esportivo • Natal, RN</p>
+    <a href="#contato" class="btn">Agendar Amistoso</a>
+  </div>
+</header>
+
+<section class="container">
+  <div class="card profile-card">
+    <img src="Escudo.jpeg" alt="Escudo Os Crias" class="escudo">
+    <h2>📌 Sobre o Time</h2>
+    <p><strong>@criasstv</strong></p>
+    <p>📍 Natal, RN</p>
+    <p>📩 Amistosos e parcerias via Direct</p>
+    <p>👥 485 seguidores</p>
+  </div>  
+<h2>🎽 Identidade</h2>
+    <div class="uniformes-container">
+      <div class="uniforme-item">
+        <p><strong>Camisa 1: Branco</strong></p>
+        <img src="Camisa1.jpeg" alt="Camisa 1" class="img-uniforme">
+      </div>
+      <div class="uniforme-item">
+        <p><strong>Camisa 2: Roxo</strong></p>
+        <img src="Camisa2.jpeg" alt="Camisa 2" class="img-uniforme">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="contato">
+  <div class="card">
+    <h2>⚽ Agendar Amistoso</h2>
+    <form id="formAmistoso">
+      <input type="text" id="nomeTime" placeholder="Nome do seu Time" required>
+      <div class="form-row">
+        <input type="date" id="dataJogo" required>
+        <input type="time" id="horaJogo" required>
+      </div>
+      <select id="tipoJogo" required>
+        <option value="">Tipo de Jogo</option>
+        <option value="Society">Society</option>
+        <option value="Futsal">Futsal</option>
+      </select>
+      <input type="text" id="localJogo" placeholder="Local / Arena" required>
+      <button type="submit" class="btn-submit">Enviar via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="container">
+  <div class="card">
+    <h2>🔗 Nossas Redes</h2>
+    <div class="button-group-links">
+      <a href="https://tiktok.com/@oscriassofc" class="btn-link tiktok" target="_blank">📱 TikTok Oficial</a>
+      <a href="https://wa.me/558481938169" class="btn-link whatsapp-link" target="_blank">📞 WhatsApp Direto</a>
+      <a href="camisa.html" class="btn-camisa">
+    🛒 Comprar Camisa
+     <a href="elenco.html" class="btn-elenco">
+      ​🏆
+    <i class="fas fa-users"></i> Conheça o Elenco
+</a>
+  </a>
+</a>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="card">
+    <h2>📅 Próximos Confrontos</h2>
+    <div id="lista-jogos">
+<div class="jogo-item">
+  <p><strong>15/04 - 20:30</strong></p> <p>Os Crias 🆚 Nome do Adversário </p> <p><small>📍 Local: Arena Ponta Negra</small></p>
+      </div>
+      
+      <p class="sem-jogos"> Jogo marcado. Agenda o teu abaixo! 👇</p>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
