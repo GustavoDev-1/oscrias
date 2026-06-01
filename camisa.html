@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja - Os Crias</title>
+  <link rel="stylesheet" href="camisa.css">
+</head>
+<body>
+<div class="nav-topo">
+    <a href="index.html" class="btn-voltar-premium">
+        <i class="fas fa-chevron-left"></i> Voltar ao Início
+    </a>
+</div>
+
+<h1>👕 Loja Oficial - Os Crias</h1>
+
+<div class="loja">
+
+  <!-- CAMISA 1 -->
+  <div class="produto">
+    <img src="camisa1.jpeg">
+
+    <h2>Camisa Titular</h2>
+
+    <select class="tamanho">
+      <option>Tamanho</option>
+      <option>P</option>
+      <option>M</option>
+      <option>G</option>
+      <option>GG</option>
+    </select>
+
+    <input type="text" class="nome" placeholder="Nome (opcional)">
+    <input type="number" class="numero" placeholder="Número">
+
+    <button onclick="pedir(this, 'Camisa Titular')">
+      Pedir via WhatsApp
+    </button>
+  </div>
+
+  <!-- CAMISA 2 -->
+  <div class="produto">
+    <img src="camisa2.jpeg">
+
+    <h2>Camisa Reserva</h2>
+
+    <select class="tamanho">
+      <option>Tamanho</option>
+      <option>P</option>
+      <option>M</option>
+      <option>G</option>
+      <option>GG</option>
+    </select>
+
+    <input type="text" class="nome" placeholder="Nome (opcional)">
+    <input type="number" class="numero" placeholder="Número">
+
+    <button onclick="pedir(this, 'Camisa Reserva')">
+      Pedir via WhatsApp
+    </button>
+  </div>
+
+</div>
+
+<script src="camisa.js"></script>
+</body>
+</html>
