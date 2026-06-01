@@ -1,0 +1,429 @@
+body { 
+    margin: 0; 
+    font-family: 'Segoe UI', sans-serif; 
+    background: #0b0b15; 
+    color: #fff; 
+}
+
+.hero { 
+    height: 350px; 
+    background: url('20260405_190709.jpeg') center/cover no-repeat; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-bottom: 4px solid #6c3cff;
+}
+
+.overlay { 
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 30px; 
+    text-align: center; 
+    border-radius: 20px; 
+}
+
+.container { padding: 20px; max-width: 800px; margin: auto; }
+
+.card { 
+    background: #151528; 
+    padding: 25px; 
+    border-radius: 15px; 
+    margin-bottom: 20px; 
+    border: 1px solid #252545;
+    text-align: center;
+}
+.escudo {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #6c3cff;
+    object-fit: cover;
+    background: #fff; 
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uniformes-container { 
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.uniforme-item { flex: 1; min-width: 140px; }
+
+.img-uniforme { 
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    border: 2px solid #252545;
+    transition: 0.3s;
+    display: block;
+}
+
+.img-uniforme:hover { transform: scale(1.05); border-color: #6c3cff; }
+
+h2 { color: #a970ff; }
+
+.btn, .btn-submit, .btn-link { 
+    display: inline-block; padding: 12px 20px; 
+    border-radius: 8px; background: #6c3cff; 
+    color: #fff; text-decoration: none; font-weight: bold; 
+    border: none; cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-submit { background: #25d366; width: 100%; margin-top: 10px; }
+
+.button-group, .button-group-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tiktok { background: #000; border: 1px solid #fe2c55; }
+.whatsapp, .whatsapp-link { background: #25d366; }
+
+.btn-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 60, 255, 0.4);
+}
+
+#lista-jogos {
+    background: #0b0b15;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px inset #252545;
+}
+
+.jogo-item {
+    border-left: 4px solid #fe2c55; 
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: #1a1a2e;
+    border-radius: 0 8px 8px 0;
+}
+
+.btn-camisa {
+  display: block;
+  margin-top: 12px;
+  padding: 14px;
+  text-align: center;
+  background: linear-gradient(45deg, #3b82f6, #2563eb);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.btn-camisa:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Configuração Geral do Fundo */
+.body-premium {
+    background: #050505;
+    color: white;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.background-glow {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% -20%, #2b3a8c 0%, transparent 50%);
+    z-index: -1;
+}
+
+.titulo-moderno {
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.titulo-moderno span {
+    color: #5865F2; /* Cor principal do time */
+    display: block;
+    font-size: 1.5rem;
+}
+
+/* Grid de Cards */
+.grid-premium {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* O Card Estilo FIFA */
+.card-pro {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card-pro:hover {
+    transform: translateY(-15px) rotateY(10deg);
+    border-color: #5865F2;
+    box-shadow: 0 20px 50px rgba(88, 101, 242, 0.3);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.overall { font-size: 2.5rem; line-height: 1; color: #5865F2; }
+.pos-tag { font-size: 0.9rem; color: #888; }
+
+.foto-container {
+    width: 100%;
+    height: 220px;
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
+}
+
+.card-body h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.line-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #5865F2, transparent);
+    margin: 15px 0;
+}
+
+.attributes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.attr {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.attr span { color: #666; font-weight: bold; }
+.attr strong { color: #fff; }
+
+.card-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.escudo-mini { width: 30px; height: 30px; border-radius: 50%; }
+.numero-camisa { font-weight: 900; color: rgba(255,255,255,0.2); font-size: 1.5rem; }
+
+/* Botão Voltar */
+.btn-back {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.btn-back:hover { background: #fff; color: #000; }
+
+
+/* Títulos das Posições */
+.titulo-posicao {
+    border-left: 5px solid #5865F2;
+    padding-left: 15px;
+    margin: 30px 20px 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.reservas { border-color: #666; color: #aaa; }
+
+/* Grid para fotos pequenas */
+.grid-elenco-reduzido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Tamanho pequeno */
+    gap: 15px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+/* Card estilo Mini */
+.card-mini {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card-mini img {
+    width: 100%;
+    height: 120px; /* Foto pequena */
+    object-fit: cover;
+}
+
+.card-mini .info {
+    padding: 8px;
+}
+
+.card-mini h4 {
+    margin: 0;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Não deixa o nome quebrar o layout */
+}
+
+.card-mini span {
+    font-size: 0.75rem;
+    color: #5865F2;
+    font-weight: bold;
+}
+
+/* Destaque para reservas */
+.card-mini.reserva {
+    opacity: 0.8;
+    filter: grayscale(0.5);
+}
+
+.card-mini:hover {
+    transform: scale(1.05);
+    border-color: #5865F2;
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.btn-elenco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 90%; /* Ajusta a largura */
+    max-width: 400px;
+    background: linear-gradient(45deg, #5865F2, #2b3a8c); /* Degradê Azul */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-elenco:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+}
+
+/* Ícone dentro do botão */
+.btn-elenco i {
+    font-size: 1.2rem;
+}
+
+/* Container principal */
+.container-elenco {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Espaçamento entre as categorias (Goleiro, Fixo...) */
+.secao-posicao {
+    margin-bottom: 40px;
+}
+
+/* Estilo do Título da Posição */
+.titulo-posicao {
+    font-size: 1.2rem;
+    color: #5865F2;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* MÁGICA: Aqui os cards ficam um ao lado do outro */
+.grid-cards {
+    display: grid;
+    /* Cria colunas de 150px. Se couber 4, ele coloca 4 na mesma linha */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px; /* Espaço entre os cards */
+}
+
+/* O Card em si */
+.card-mini {
+    background: #1c1c1f;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card-mini img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.card-mini .info {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-mini h4 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.card-mini span {
+    color: #5865F2;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Efeito ao passar o mouse */
+.card-mini:hover {
+    border-color: #5865F2;
+    transform: translateY(-5px);
+}
