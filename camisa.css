@@ -1,0 +1,98 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px 0;
+}
+
+.loja {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+/* Container do topo para o botão não ficar colado na borda */
+.nav-topo {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Estilo do Botão Voltar Premium */
+.btn-voltar-premium {
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente fumê */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    backdrop-filter: blur(5px); /* Efeito de vidro */
+}
+
+.btn-voltar-premium:hover {
+    background: #5865F2; /* Cor azul do time */
+    border-color: #5865F2;
+    transform: translateX(-5px); /* Ele dá um "pulo" para a esquerda */
+    box-shadow: 0 0 20px rgba(88, 101, 242, 0.4);
+}
+
+.btn-voltar-premium i {
+    font-size: 0.8rem;
+}
