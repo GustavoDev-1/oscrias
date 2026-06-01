@@ -6,7 +6,7 @@ body {
 }
 
 .hero { 
-    height: 350px; 
+    height: 60px; 
     background: url('20260405_190709.jpeg') center/cover no-repeat; 
     display: flex; 
     align-items: center; 
